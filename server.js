@@ -12,6 +12,7 @@ app.get('/',(req,res) => res.send('API running'));
 app.use('/api/users/hod', require('./routes/api/users/hod'));  
 app.use('/api/hauth', require('./routes/api/hauth'));
 app.use('/api/profile/pmentor', require('./routes/api/profile/pmentor'));
+app.use('/api/profile/pstud', require('./routes/api/profile/pstud'));
 //app.use('/api/posts', require('./routes/api/posts'));
 
 
