@@ -1,4 +1,5 @@
 const mongoose = require('mongoose');
+const { validate } = require('./PSTUD');
 
 const ProfileSchema = mongoose.Schema({
 user: {
@@ -26,7 +27,11 @@ name: {
   },
   noOfStudent: {
       type: String,
-      required:true
+      required:true,
+      validate:[arrayLimit]
   }
 });
+function arrayLimit(val){
+  return val.length <=10;
+}
   module.exports = pmentor = mongoose.model('pmentor',ProfileSchema);
