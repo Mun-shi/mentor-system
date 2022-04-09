@@ -13,11 +13,11 @@ name: {
     type: [String]
     },
   id: {
-    type: Number,
+    type: String,
     required: true
   },
   mobno: {
-      type: Number,
+      type: String,
       required: true
   },
   email: {
@@ -25,7 +25,7 @@ name: {
       required: true
   },
   noOfStudent: {
-      type: Number,
+      type: String,
       required:true
   }
 });

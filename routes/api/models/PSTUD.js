@@ -10,15 +10,15 @@ name: {
     required: true
   },
   regNo: {
-    type: Number,
+    type: String,
     required: true
     },
   rollNo: {
-    type: Number,
+    type: String,
     required: true
   },
   semester: {
-      type: Number,
+      type: String,
       required: true
   },
 
